@@ -1,8 +1,5 @@
-$(document).ready(function(){
-
-
-
-  $("#track-suggest form").submit(function(event) {
+$(function() {
+  $("button").click(function(event){
     var name = $("#name").val();
     var website = $("select#style").val();
     var size = $("select#size").val();
@@ -14,10 +11,10 @@ $(document).ready(function(){
       $('#trackid').text("CSS/Design");
     } else if (size === "large" && freeTime !== "games" && website !== "look") {
       $('#trackid').text("C#/.Net");
-    } else if (mobile === "yes" && freeTime !== "art" && website !== "look") {
+    } else if (mobile === "yes" && freeTime === "busy" && website !== "look" && website !== perform) {
       $('#trackid').text("Java/Android");
     }
-    
+
 
 
 
