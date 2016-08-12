@@ -1,11 +1,33 @@
-function() {
-  $("button").click(function(event){
-  var name = $("#name").val();
+if (humanInput === 1 && goodevilInput === 0) {
+  if (forceInput === 0) {
+    charMatch = "Yoda";
+  }
+  else if (weaponInput === 0) {
+    charMatch = "Chewbacca";
+  }
+  else if (weaponInput === 3) {
+    charMatch = "R2D2";
+  }
+  else if (weaponInput === 5) {
+    charMatch = "C3PO";
+  }
+}
 
-  $(".name").text(name);
-  $("#result").show();
-
-  event.preventDefault();
-
-  });
-});
+else if (humanInput === 0){
+  if (forceInput === 0) {
+    if (goodevilInput === 1) {
+      charMatch = "Darth Vader";
+    }
+    else {
+      charMatch = "Luke Skywalker";
+    }
+  }
+  else {
+    if (goodevilInput === 1) {
+      charMatch = "Boba Fett";
+    }
+    else {
+      charMatch = "Han Solo or Pricess Leia";
+    }
+  }
+}

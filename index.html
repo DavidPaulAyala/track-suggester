@@ -19,36 +19,36 @@
           <div class="form-group">
             <label for="style">Which option best describes your reaction when you look at a Website?</label>
             <select class="form-control" id="style">
-              <option value="looks">You're most interested in the design elements and how they affect the overall look and feel of the site.</option>
-              <option value="function">You'd like to know what methods were used to make the site function the way it does.</option>
-              <option value="perform">You look for areas where overall performance could be improved.</option>
+              <option value="-5">You're most interested in the design elements and how they affect the overall look and feel of the site.</option>
+              <option value="10">You'd like to know what methods were used to make the site function the way it does.</option>
+              <option value="1">You look for areas where overall performance could be improved.</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="style">After your courses are complete, what size company do you envision yourself working for?</label>
-            <select class="form-control" id="style">
-              <option value="small">The smaller the better. A startup with very few employees would be ideal.</option>
-              <option value="large">A larger company that has been around for years with a name most people recognize.</option>
-              <option value="medium">Somewhere between the first two options above, not too big, but too small isn't ideal either.</option>
+            <label for="size">After your courses are complete, what size company do you envision yourself working for?</label>
+            <select class="form-control" id="size">
+              <option value="0">The smaller the better. A startup with very few employees would be ideal.</option>
+              <option value="1">A larger company that has been around for years with a name most people recognize.</option>
+              <option value="0">Somewhere between the first two options above, not too big, but too small isn't ideal either.</option>
             </select>
           </div>
           <div class="form-group well" id="radio">
             <label for="mobile">Are you excited by the idea of working on mobile apps?</label>
             <div class="radio">
               <label>
-                <input type="radio" name="mobile" value="yes" checked>
+                <input type="radio" name="mobile" value="10" checked>
                 Yes, definitely!
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="mobile" value="notreally">
+                <input type="radio" name="mobile" value="1">
                 No. Not really.
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="mobile" value="maybe">
+                <input type="radio" name="mobile" value="0">
                 Maybe, it might be fun!?
               </label>
             </div>
@@ -75,16 +75,16 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="style">Lastly, which option below best describes how you'd like to spend your free time?</label>
-            <select class="form-control" id="style">
-              <option value="art">I find time to do something artistic.  Whether it's painting, drawing, or going to a museum.</option>
-              <option value="busy">I stay busy all the time. Having time to clean my house or organize a closet makes me happy.</option>
-              <option value="gaming">Video games are my escape. Please don't bother me when my headset is on!</option>
+            <label for="time">Lastly, which option below best describes how you'd like to spend your free time?</label>
+            <select class="form-control" id="time">
+              <option value="-5">I find time to do something artistic.  Whether it's painting, drawing, or going to a museum.</option>
+              <option value="1">I stay busy all the time. Having time to clean my house or organize a closet makes me happy.</option>
+              <option value="0">Video games are my escape. Please don't bother me when my headset is on!</option>
             </select>
           </div>
           <button class="btn btn-success btn-lg" type="Submit">See your track suggestion!</button>
           <div id="result">
-            <p>Hello <span class="name"></span>, based on the results of your survey, it looks like you're most compatible with the """" track</p>
+            <p>Hello <span class="name"></span>, based on the results of your survey, it looks like you're most compatible with the <span id="trackid"></span></p> track</p>
           </div>
       </div>
     </body>
