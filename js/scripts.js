@@ -12,11 +12,17 @@ $(document).ready(function(){
 
     var track = "TEST";
 
-    if (website <= 0 && freeTime <= 0) {
-      {
+    if (website <= 0) {
+      track = "CSS/Design";
+      }
+      else if (website === 1) {
       track = "C#/.Net";
       }
-    }
+      else if (website >= 2) {
+      track = "Java/Android";
+      }
+
+
 
 
 
