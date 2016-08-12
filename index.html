@@ -9,6 +9,7 @@
     <title>Track Suggester</title>
   </head>
     <body>
+      <form class="suggester">
       <div class="container">
         <h1>WHich Epicodus track should you select?</h1>
         <h3>Please fill out the survey below to help you choose which track may be best for you.</h3>
@@ -19,7 +20,7 @@
           <div class="form-group">
             <label for="style">Which option best describes your reaction when you look at a Website?</label>
             <select class="form-control" id="style">
-              <option value="-5">You're most interested in the design elements and how they affect the overall look and feel of the site.</option>
+              <option value="0">You're most interested in the design elements and how they affect the overall look and feel of the site.</option>
               <option value="10">You'd like to know what methods were used to make the site function the way it does.</option>
               <option value="1">You look for areas where overall performance could be improved.</option>
             </select>
@@ -77,12 +78,13 @@
           <div class="form-group">
             <label for="time">Lastly, which option below best describes how you'd like to spend your free time?</label>
             <select class="form-control" id="time">
-              <option value="-5">I find time to do something artistic.  Whether it's painting, drawing, or going to a museum.</option>
+              <option value="0">I find time to do something artistic.  Whether it's painting, drawing, or going to a museum.</option>
               <option value="1">I stay busy all the time. Having time to clean my house or organize a closet makes me happy.</option>
               <option value="0">Video games are my escape. Please don't bother me when my headset is on!</option>
             </select>
           </div>
           <button class="btn btn-success btn-lg" type="Submit">See your track suggestion!</button>
+          </form>
           <div id="result">
             <p>Hello <span class="name"></span>, based on the results of your survey, it looks like you're most compatible with the <span id="trackid"></span></p> track</p>
           </div>
