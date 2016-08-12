@@ -1,0 +1,11 @@
+function() {
+  $("button").click(function(event){
+  var name = $("#name").val();
+
+  $(".name").text(name);
+  $("#result").show();
+
+  event.preventDefault();
+
+  });
+});
