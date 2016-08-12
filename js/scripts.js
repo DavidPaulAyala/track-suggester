@@ -4,38 +4,24 @@ $(document).ready(function(){
 
   $("#track-suggest form").submit(function(event) {
     var name = $("#name").val();
-    var website = parseInt($("select#style").val());
-    var size = parseInt($("select#size").val());
-    var mobile = parseInt($("input:radio[name=mobile]:checked").val());
+    var website = $("select#style").val();
+    var size = $("select#size").val();
+    var mobile = $("input:radio[name=mobile]:checked").val();
     var system = $("input:radio[name=os]:checked").val();
-    var freeTime = parseInt($("select#time").val());
+    var freeTime = $("select#time").val();
 
-    var track = "TEST";
-
-    if (website <= 0) {
-      track = "CSS/Design";
-      }
-      else if (website === 1) {
-      track = "C#/.Net";
-      }
-      else if (website >= 2) {
-      track = "Java/Android";
-      }
-
-
-
-
-
-
-
-
-
-
+    if (website === "look" && freeTime !== "games" && "size" !== "large") {
+      $('#trackid').text("CSS/Design");
+    } else if (size === "large" && freeTime !== "games" && website !== "look") {
+      $('#trackid').text("C#/.Net");
+    } else if (mobile === "yes" && freeTime !== "art" && website !== "look") {
+      $('#trackid').text("Java/Android");
+    }
+    
 
 
 
     $(".name").text(name);
-    $("#trackid").text(track);
     $("#result").show();
     event.preventDefault();
 
