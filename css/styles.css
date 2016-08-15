@@ -4,18 +4,54 @@
   margin: 10px;
   padding: 4px;
   border: solid 4px;
-  background-color: silver;
+  background-image: url("../img/bground.jpg");
 }
+
+
+
+#radio {
+  background-image: url("../img/bground.jpg");
+}
+
+.form-control{
+  background-image: url("../img/bground.jpg");
+}
+
+.well {
+  margin-top: 25px;
+  padding: 25px;
+  background-image: url("../img/marble-background.png");
+}
+
+
 
 h1 {
   text-align: center;
-  text-shadow: 10px;
+  font-family: helvetica;
+  text-decoration: overline;
+  color: black;
+  text-shadow:
+  -1px -1px 0 #FFF,
+  1px -1px 0 #FFF,
+  -1px 1px 0 #FFF,
+  1px 1px 0 #FFF;
 }
 
 h3 {
   text-align: center;
+  font-family: helvetica;
+  color: black;
+  text-shadow:
+  -1px -1px 0 #FFF,
+  1px -1px 0 #FFF,
+  -1px 1px 0 #FFF,
+  1px 1px 0 #FFF;
 }
 
-body  {
-  background: #ffffcc;
+
+
+
+
+body {
+  background-image: url("../img/bground.jpg");
 }

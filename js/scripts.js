@@ -8,7 +8,7 @@ $(function() {
     var freeTime = parseInt($("select#time").val());
 
     if (website + freeTime <= 0) {
-    $('#trackid').text("CSS/Design");
+    $('#trackid').text('CSS/Design');
     } else if (website > 0 & mobile >= 1) {
     $('#trackid').text('Java/Android');
     } else if (website > 0 & size >= 1 & mobile <1) {

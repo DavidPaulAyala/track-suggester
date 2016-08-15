@@ -1,7 +1,6 @@
-if (website === 0) {
-$('#trackid').text("CSS/Design");
-} else if (website === 1) {
-$('#trackid').text('Java/Android');
-} else if (website === 2) {
-$('#trackid').text('C#/.Net');
+.well {
+  margin-top: 25px;
+  padding: 25px;
+  -moz-opacity: 0; /* opacity [0-1] */
+  -webkit-opacity: 1; /* opacity [0-1] */
 }
