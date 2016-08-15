@@ -15,7 +15,6 @@ $(function() {
     $('#trackid').text('C#/.Net');
     }
 
-
     $(".name").text(name);
     $("#result").show();
     event.preventDefault();
